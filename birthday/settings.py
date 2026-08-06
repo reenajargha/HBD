@@ -32,13 +32,13 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
-    "your-project.up.railway.app",
+    "hbd-production-126d.up.railway.app",
     "localhost",
     "127.0.0.1",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://your-project.up.railway.app",
+    "https://hbd-production-126d.up.railway.app",
 ]
 
 # Application definition
