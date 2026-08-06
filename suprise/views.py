@@ -5,3 +5,6 @@ def index(request):
 
 def birthday(request):
     return render(request, 'suprise/birthday.html')
+
+def gift(request):
+    return render(request, "suprise/gift.html")

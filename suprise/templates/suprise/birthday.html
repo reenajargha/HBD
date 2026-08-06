@@ -183,88 +183,7 @@ My Love ❤️
 </p>
 
 </section>
-<!-- ================= FINAL SURPRISE ================= -->
-
-<section class="question-section">
-
-    <div class="question-box">
-
-        <!-- First Question -->
-        <div id="question1">
-
-            <h2>Are you sure you are crying? 🥺</h2>
-
-            <div class="question-buttons">
-
-                <button class="yes-btn" onclick="firstYes()">
-                    Yes 😭
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- You Don't Love Me -->
-        <div id="dontLove" style="display:none;">
-
-            <h2>You don't love me... 😭💔</h2>
-
-            <button class="try-btn" onclick="showQuestion2()">
-                Try Again ❤️
-            </button>
-
-        </div>
-
-
-        <!-- Second Question -->
-        <div id="question2" style="display:none;">
-
-            <h2>Are you sure you want to leave? 🥺</h2>
-
-            <div class="question-buttons">
-
-                <button class="yes-btn" onclick="stayHere()">
-                    Yes 😢
-                </button>
-
-                <button class="no-btn" onclick="showFinalMessage()">
-                    No ❤️
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- Final Message -->
-        <div id="finalMessage" style="display:none;">
-
-            <h2>
-                I knew it! 🤭❤️<br>
-                I know you love me hehehe 🥰
-            </h2>
-
-            <a href="{% url 'gift' %}" class="go-back-btn">
-                🎁 OK Bye, Happy Birthday
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
 <!-- ================= GO BACK ================= -->
-
-<section class="go-back-section">
-
-    <a href="/" class="go-back-btn">
-        ← Go Back
-    </a>
-
-</section><!-- ================= GO BACK ================= -->
-
 <section class="go-back-section">
 
     <button class="go-back-btn" onclick="openQuestionBox()">
@@ -273,55 +192,27 @@ My Love ❤️
 
 </section>
 
+<div id="popupOverlay" class="popup-overlay">
 
-<!-- ================= FINAL SURPRISE ================= -->
+    <div class="question-box">
+ 
+        <button class="close-popup" onclick="closePopup()">
+        ✕
+        </button>
 
-<section class="question-section">
+        <!-- Question -->
 
-    <div class="question-box" id="questionBox" style="display:none;">
-
-        <!-- First Question -->
-        <div id="question1">
-
-            <h2>🥺 Are you sure you are crying?</h2>
-
-            <div class="question-buttons">
-
-                <button class="yes-btn" onclick="firstYes()">
-                    Yes 😭
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- You Don't Love Me -->
-        <div id="dontLove" style="display:none;">
-
-            <h2>😭 You don't love me...</h2>
-
-            <p>That makes me sad... 💔</p>
-
-            <button class="try-btn" onclick="showQuestion2()">
-                Try Again ❤️
-            </button>
-
-        </div>
-
-
-        <!-- Second Question -->
-        <div id="question2" style="display:none;">
+        <div id="question">
 
             <h2>🥺 Are you sure you want to leave?</h2>
 
             <div class="question-buttons">
 
-                <button class="yes-btn" onclick="stayHere()">
+                <button class="yes-btn" onclick="showDontLove()">
                     Yes 😢
                 </button>
 
-                <button class="no-btn" onclick="showFinalMessage()">
+                <button class="no-btn" onclick="showLove()">
                     No ❤️
                 </button>
 
@@ -330,14 +221,28 @@ My Love ❤️
         </div>
 
 
-        <!-- Final Message -->
-        <div id="finalMessage" style="display:none;">
+        <!-- DON'T LOVE -->
 
-            <h2>
-                🤭 I knew it!<br><br>
+        <div id="dontLove" style="display:none;">
 
-                I know you love me hehehe ❤️🥰
-            </h2>
+            <h2>😭 I know you don't love me...</h2>
+
+            <p>Please don't leave yet... 🥺❤️</p>
+
+            <button class="try-btn" onclick="tryAgain()">
+                ❤️ Try Again
+            </button>
+
+        </div>
+
+
+        <!-- FINAL MESSAGE -->
+
+        <div id="loveMessage" style="display:none;">
+
+            <h2>🤭 I knew it! ❤️</h2>
+
+            <p>I know you love me hehehe 🥰</p>
 
             <a href="{% url 'gift' %}" class="gift-btn">
                 🎁 OK Bye, Happy Birthday
@@ -347,7 +252,7 @@ My Love ❤️
 
     </div>
 
-</section>
+</div>
 
 <script src="{% static 'suprise/js/birthday.js' %}"></script>
 

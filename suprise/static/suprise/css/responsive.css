@@ -466,3 +466,100 @@
 }
 
 }
+
+/*=========================================
+FINAL SURPRISE RESPONSIVE
+=========================================*/
+/*=========================================
+POPUP RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+    .question-box{
+
+        width:92%;
+
+        padding:30px 20px;
+
+    }
+
+    .question-box h2{
+
+        font-size:24px;
+
+    }
+
+    .question-box p{
+
+        font-size:16px;
+
+    }
+
+    .question-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .yes-btn,
+    .no-btn,
+    .try-btn,
+    .gift-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .question-box{
+
+        padding:25px 18px;
+
+    }
+
+    .question-box h2{
+
+        font-size:20px;
+
+    }
+
+    .question-box p{
+
+        font-size:15px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .question-box{
+
+        width:92%;
+
+        padding:25px 18px;
+
+    }
+
+    .question-buttons{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .yes-btn,
+    .no-btn,
+    .try-btn,
+    .gift-btn{
+
+        width:100%;
+
+    }
+
+}

@@ -180,3 +180,57 @@ s.remove();
 }
 
 setInterval(sparkle,250);
+function openQuestionBox(){
+
+    document.getElementById("popupOverlay").style.display="flex";
+
+    document.getElementById("question").style.display="block";
+
+    document.getElementById("dontLove").style.display="none";
+
+    document.getElementById("loveMessage").style.display="none";
+
+}
+
+
+function showDontLove(){
+
+    document.getElementById("question").style.display="none";
+
+    document.getElementById("dontLove").style.display="block";
+
+}
+
+
+function tryAgain(){
+
+    document.getElementById("dontLove").style.display="none";
+
+    document.getElementById("question").style.display="block";
+
+}
+
+
+function showLove(){
+
+    document.getElementById("question").style.display="none";
+
+    document.getElementById("loveMessage").style.display="block";
+
+}
+
+function closePopup(){
+
+    document.getElementById("popupOverlay").style.display="none";
+
+}
+
+document.getElementById("popupOverlay").addEventListener("click",function(e){
+
+    if(e.target===this){
+
+        this.style.display="none";
+
+    }
+
+});
