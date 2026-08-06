@@ -23,23 +23,25 @@ body{
 .gift-page{
 
     width:100%;
-    height:100vh;
+    min-height:100vh;
+    height:auto;
+    padding:30px 20px;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
     overflow:hidden;
+    position:relative;
 
     background:linear-gradient(
         135deg,
-        #ffe3ef,
-        #ffeef8,
-        #f7e8ff,
-        #fff7ec
+        #fff0f7,
+        #ffe6f2,
+        #fbe8ff,
+        #fff9ef
     );
 
-    position:relative;
 }
 
 /* ===========================
@@ -71,6 +73,10 @@ body{
 
     z-index:10;
 
+    padding:25px;
+
+    animation:fadeUp .8s ease;
+
 }
 
 .gift-container h3{
@@ -82,16 +88,18 @@ body{
     margin-bottom:15px;
 
 }
-
 .gift-container h1{
 
-    font-size:70px;
+    font-size:72px;
 
     color:#ff2d7d;
 
     font-family:'Pacifico',cursive;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
+
+    text-shadow:
+        0 4px 10px rgba(255,90,150,.18);
 
 }
 
@@ -103,6 +111,8 @@ body{
 
     margin-bottom:70px;
 
+    line-height:1.8;
+
 }
 
 /* ===========================
@@ -112,7 +122,6 @@ body{
 #gift{
 
     width:220px;
-
     height:220px;
 
     position:relative;
@@ -121,50 +130,59 @@ body{
 
     cursor:pointer;
 
-    transition:.4s;
+    transition:.35s;
 
     animation:giftFloat 3s ease-in-out infinite;
 
+    filter:drop-shadow(0 12px 18px rgba(255,80,150,.18));
+
 }
 
-/* Box */
+#gift:hover{
 
+    transform:scale(1.05);
+
+}
 .gift-box{
 
     width:220px;
-
     height:150px;
 
-    background:#ff5f9d;
+    background:linear-gradient(
+        to bottom,
+        #ff75b5,
+        #ff4f95
+    );
 
-    border-radius:12px;
+    border-radius:15px;
 
     position:absolute;
 
     bottom:0;
 
     box-shadow:
-    0 15px 30px rgba(0,0,0,.15);
+        0 18px 35px rgba(0,0,0,.15);
 
 }
-
 /* Lid */
 
 .gift-lid{
 
     width:230px;
-
     height:45px;
 
     position:absolute;
 
     top:40px;
-
     left:-5px;
 
-    background:#ff80b4;
+    background:linear-gradient(
+        to bottom,
+        #ff9bc8,
+        #ff74ae
+    );
 
-    border-radius:10px;
+    border-radius:12px;
 
     transition:.7s;
 
@@ -184,6 +202,9 @@ body{
 
     background:white;
 
+    box-shadow:
+        0 0 8px rgba(255,255,255,.7);
+
     position:absolute;
 
     left:100px;
@@ -201,6 +222,8 @@ body{
     height:20px;
 
     background:white;
+    box-shadow:
+        0 0 8px rgba(255,255,255,.7);
 
     position:absolute;
 
@@ -209,6 +232,7 @@ body{
     z-index:4;
 
 }
+
 
 /* Bow */
 
@@ -270,33 +294,47 @@ body{
    SHADOW
 =========================== */
 
-#gift::after{
+#gift::before{
 
     content:"";
 
-    width:170px;
+    position:absolute;
 
-    height:18px;
-
-    background:rgba(0,0,0,.12);
+    inset:-18px;
 
     border-radius:50%;
 
-    position:absolute;
+    background:radial-gradient(
+        rgba(255,140,200,.25),
+        transparent 70%
+    );
 
-    left:25px;
-
-    bottom:-20px;
-
-    filter:blur(5px);
-
-    animation:shadowMove 3s ease-in-out infinite;
+    z-index:-1;
 
 }
 
 /* ===========================
    ANIMATIONS
 =========================== */
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
 
 @keyframes giftFloat{
 
