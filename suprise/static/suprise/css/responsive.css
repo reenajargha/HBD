@@ -1,0 +1,468 @@
+/*==========================================
+        GIFT PAGE RESPONSIVE
+==========================================*/
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+.gift-container{
+
+    width:90%;
+
+    text-align:center;
+
+}
+
+.gift-container h1{
+
+    font-size:48px;
+
+}
+
+.gift-container p{
+
+    font-size:22px;
+
+}
+
+#gift{
+
+    transform:scale(.85);
+
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.gift-page{
+
+    padding:20px;
+
+}
+
+.gift-container{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.gift-container h1{
+
+    font-size:36px;
+
+    line-height:1.3;
+
+}
+
+.gift-container p{
+
+    font-size:18px;
+
+    margin:20px 0 40px;
+
+}
+
+#gift{
+
+    transform:scale(.65);
+
+}
+
+}
+
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+.gift-container h1{
+
+    font-size:30px;
+
+}
+
+.gift-container p{
+
+    font-size:16px;
+
+}
+
+#gift{
+
+    transform:scale(.55);
+
+}
+
+}
+
+/* Birthday */
+/*=========================================
+            TABLET
+=========================================*/
+
+@media (max-width:992px){
+
+.hero{
+
+    padding:50px 25px;
+
+    min-height:100vh;
+
+}
+
+.birthday-heading{
+
+    font-size:60px;
+
+}
+
+.love-heading{
+
+    font-size:42px;
+
+}
+
+.typing-message{
+
+    width:90%;
+
+}
+
+#typing{
+
+    font-size:22px;
+
+}
+
+.cake{
+
+    transform:scale(.8);
+
+}
+
+.section-title{
+
+    font-size:34px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(2,180px);
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.photo{
+
+    width:180px;
+
+}
+
+.photo img{
+
+    height:180px;
+
+}
+
+.message-section{
+
+    padding:80px 30px;
+
+}
+
+.message-section p{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.end-section{
+
+    padding:80px 30px;
+
+}
+
+}
+
+
+/*=========================================
+            MOBILE
+=========================================*/
+
+@media (max-width:768px){
+
+.hero{
+
+    min-height:100vh;
+
+    padding:40px 20px;
+
+}
+
+.birthday-heading{
+
+    font-size:42px;
+
+    line-height:1.3;
+
+    text-align:center;
+
+}
+
+.love-heading{
+
+    font-size:30px;
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+.typing-message{
+
+    width:95%;
+
+    margin-top:30px;
+
+}
+
+#typing{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    text-align:center;
+
+}
+
+/* Cake */
+
+.cake-section{
+
+    min-height:100vh;
+
+    padding:60px 20px;
+
+}
+
+.cake{
+
+    transform:scale(.65);
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+
+/* Gallery */
+
+.gallery-section{
+
+    padding:70px 15px;
+
+}
+
+.gallery-section h2{
+
+    font-size:32px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(2,140px);
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.photo{
+
+    width:140px;
+
+    padding:8px;
+
+}
+
+.photo img{
+
+    height:140px;
+
+}
+
+.photo span{
+
+    font-size:13px;
+
+}
+
+/* Message */
+
+.message-section{
+
+    padding:70px 20px;
+
+}
+
+.message-section h2{
+
+    font-size:30px;
+
+    text-align:center;
+
+}
+
+.message-section p{
+
+    width:100%;
+
+    padding:25px;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* Ending */
+
+.end-section{
+
+    padding:70px 20px;
+
+}
+
+.end-section h1{
+
+    font-size:34px;
+
+    text-align:center;
+
+}
+
+.end-section p{
+
+    width:100%;
+
+    font-size:17px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+}
+
+}
+
+
+/*=========================================
+          SMALL PHONES
+=========================================*/
+
+@media (max-width:480px){
+
+.birthday-heading{
+
+    font-size:34px;
+
+}
+
+.love-heading{
+
+    font-size:24px;
+
+}
+
+#typing{
+
+    font-size:16px;
+
+}
+
+.cake{
+
+    transform:scale(.55);
+
+}
+
+.section-title{
+
+    font-size:24px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(2,120px);
+
+    gap:12px;
+
+}
+
+.photo{
+
+    width:120px;
+
+}
+
+.photo img{
+
+    height:120px;
+
+}
+
+.photo span{
+
+    font-size:12px;
+
+}
+
+.message-section h2{
+
+    font-size:26px;
+
+}
+
+.message-section p{
+
+    font-size:15px;
+
+}
+
+.end-section h1{
+
+    font-size:28px;
+
+}
+
+.end-section p{
+
+    font-size:15px;
+
+}
+
+}

@@ -1,0 +1,48 @@
+# Virtual Environment
+myenv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables
+.env
+
+# SQLite Database
+db.sqlite3
+
+# Static Files
+staticfiles/
+
+# Media Files
+media/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Python distribution files
+build/
+dist/
+*.egg-info/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Migrations cache
+*.pot
