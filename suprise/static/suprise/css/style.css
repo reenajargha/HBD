@@ -24,14 +24,13 @@ body{
 
     width:100%;
     min-height:100vh;
-    height:auto;
-    padding:30px 20px;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     position:relative;
 
     background:linear-gradient(
@@ -41,7 +40,6 @@ body{
         #fbe8ff,
         #fff9ef
     );
-
 }
 
 /* ===========================

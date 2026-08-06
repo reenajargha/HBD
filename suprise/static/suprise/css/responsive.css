@@ -1,7 +1,3 @@
-/*==========================================
-        GIFT PAGE RESPONSIVE
-==========================================*/
-
 /*=========================================
 GIFT PAGE RESPONSIVE
 =========================================*/
@@ -11,28 +7,43 @@ GIFT PAGE RESPONSIVE
 @media (max-width:992px){
 
     .gift-page{
+
         padding:30px 20px;
+
     }
 
     .gift-container{
+
         width:90%;
+        text-align:center;
+
     }
 
     .gift-container h3{
+
         font-size:24px;
+
     }
 
     .gift-container h1{
-        font-size:54px;
+
+        font-size:52px;
+
     }
 
     .gift-container p{
+
         font-size:20px;
         margin-bottom:55px;
+
     }
 
     #gift{
+
         transform:scale(.85);
+
+        transform-origin:center center;
+
     }
 
 }
@@ -46,24 +57,32 @@ GIFT PAGE RESPONSIVE
 
         min-height:100vh;
 
-        padding:20px;
+        padding:25px 15px;
 
+        overflow-x:hidden;
         overflow-y:auto;
+
+        justify-content:center;
+        align-items:center;
 
     }
 
     .gift-container{
+
         width:100%;
+        text-align:center;
+
     }
 
     .gift-container h3{
+
         font-size:20px;
+
     }
 
     .gift-container h1{
 
         font-size:38px;
-
         line-height:1.3;
 
     }
@@ -71,20 +90,21 @@ GIFT PAGE RESPONSIVE
     .gift-container p{
 
         font-size:17px;
+        line-height:1.7;
+
+        margin:20px auto 45px;
 
         width:95%;
-
-        margin:20px auto 40px;
-
-        line-height:1.7;
 
     }
 
     #gift{
 
-        transform:scale(.72);
+        transform:scale(.70);
 
-        transform-origin:center;
+        transform-origin:center center;
+
+        margin:auto;
 
     }
 
@@ -97,7 +117,7 @@ GIFT PAGE RESPONSIVE
 
     .gift-page{
 
-        padding:15px;
+        padding:20px 10px;
 
     }
 
@@ -117,9 +137,11 @@ GIFT PAGE RESPONSIVE
 
         font-size:15px;
 
-        width:100%;
+        line-height:1.6;
 
-        margin:18px auto 30px;
+        margin:15px auto 35px;
+
+        width:100%;
 
     }
 
@@ -127,7 +149,9 @@ GIFT PAGE RESPONSIVE
 
         transform:scale(.58);
 
-        transform-origin:center;
+        transform-origin:center center;
+
+        margin:auto;
 
     }
 
@@ -154,7 +178,9 @@ GIFT PAGE RESPONSIVE
 
         transform:scale(.48);
 
-        transform-origin:center;
+        transform-origin:center center;
+
+        margin:auto;
 
     }
 
